@@ -1,5 +1,5 @@
 # Build arguments
-FROM webdevops/php-apache:alpine-php7
+FROM webdevops/php-apache:alpine-php5
 
 # TimeZone
 RUN apk add --no-cache tzdata
