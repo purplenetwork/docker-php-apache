@@ -6,9 +6,6 @@ RUN apk add --no-cache tzdata
 RUN cp /usr/share/zoneinfo/Europe/Rome /etc/localtime
 RUN apk del tzdata
 
-# Add Memcached
-RUN apk add --no-cache --upgrade php7-memcached
-
 # Add prestissimo
 RUN composer global require "hirak/prestissimo"
 
